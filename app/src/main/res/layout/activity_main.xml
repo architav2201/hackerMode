@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textviewone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="80dp"
+            android:fontFamily="sans-serif-light"
+            android:text="Enter original age of DEATH!"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/originalAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textviewone"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:hint="Enter age between 1-100"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/originalAge"
+            android:layout_marginTop="30dp"
+            android:background="#ffffff"
+            android:textColor="@android:color/black"
+            android:onClick="submitfn"
+            android:layout_centerHorizontal="true"
+            android:text="SUBMIT" />
+
+        <TextView
+            android:id="@+id/textviewtwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/submitButton"
+            android:layout_marginTop="80dp"
+            android:fontFamily="sans-serif-light"
+            android:text="Guess the age!"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:background="@android:color/white"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            android:layout_centerHorizontal="true"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/guessedAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textviewtwo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:hint="Lets see"
+            android:inputType="number" />
+
+
+        <Button
+            android:id="@+id/guessButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/guessedAge"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="#ffffff"
+            android:textColor="@android:color/black"
+            android:onClick="guessfn"
+            android:text="guess?" />
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/guessButton"
+            android:fontFamily="sans-serif-condensed-light"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="80dp"
+            android:layout_centerHorizontal="true"
+            android:text="Predicting the unpredictable?"
+            android:textColor="#FF8F00"
+            android:textSize="40sp" />
+
+
+
+   </RelativeLayout>
+</ScrollView>
+
+
+
+
