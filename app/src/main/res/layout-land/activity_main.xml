@@ -12,12 +12,48 @@
         android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-
-
-
-
-
         android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/stat1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="WON:"
+            android:textColor="#FF8F00"
+            android:textSize="25sp"/>
+        <TextView
+            android:id="@+id/statwin"
+            android:layout_toRightOf="@id/stat1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="0"
+            android:textColor="#FF8F00"
+            android:textSize="25sp"/>
+        <TextView
+            android:id="@+id/stat2"
+            android:layout_toLeftOf="@id/statloss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LOST:"
+            android:textColor="#FF8F00"
+            android:textSize="25sp"/>
+        <TextView
+            android:id="@+id/statloss"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#FF8F00"
+            android:textSize="25sp"/>
+
+
+
+
 
         <TextView
             android:id="@+id/textviewone"
